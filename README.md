@@ -3,7 +3,7 @@
   <h1>Oficina de Git e Github</h1>
 </div>
 
-<p align = "justify"> &emsp; Este repositório é uma cópia do repositório de @JohKemPo modificado para realização da oficina por @vyctor922. </p>
+<p align = "justify"> &emsp; Este repositório é uma cópia do repositório de <a href="https://github.com/JohKemPo" target="_blank">@JohKemPo</a> modificado para realização da oficina por <a href="https://github.com/vyctor922" target="_blank">@vyctor922</a>. </p>
 
 
 <h2 align="center">S U M Á R I O</h2>
@@ -43,6 +43,7 @@
         - git diff: Comparando mudanças
         - git reset: Desfazer commits
         - Comandos para Modificar o Estado de um Arquivo
+        - Resolvendo erros
 
 3. [Capítulo 2: Trabalhando com Branches](#capitulo3)
     1. [Branches no Git](#branches)
@@ -264,7 +265,7 @@ git add .
 
 - Exemplo:
 ```
-git commit -m "Mensagem do commit"
+git commit -m "Mensagem do commit" -m "Descrição do commit"
 ```
 
 ### git pull: Sincronizar seu Repositório Local com o Remoto
@@ -335,8 +336,34 @@ git reset HEAD~1
 <h2 id="capitulo3">Trabalhando com Branches</h2>
 <h2 id="branches">Branches no Git</h2>
 
-### O que é uma branch?
+### Resolvendo erros
+<p align = "justify"> &emsp;O Git é uma ferramenta poderosa, mas também é fácil cometer erros. Felizmente, existem maneiras de consertar erros inseridos na `main`. Aqui algumas alternativas como corrigi-los.</p>
 
+<p align = "justify"> &emsp;O comando `git log` mostra o histórico de commits, com o hash do commit, o autor, a data e a mensagem de cada commit. O hash do commit é um identificador exclusivo para cada commit. Você pode usar o hash do commit para reverter para o último commit sem o erro.</p>
+
+```
+git log
+```
+
+<p align = "justify"> &emsp;O comando `git branch` cria uma nova branch a partir de um commit específico. Você pode usar o hash do commit para criar uma nova branch a partir do último commit sem o erro.</p>
+
+```
+git branch hotfix-<ERROR_NAME> <COMMIT_ID>
+```
+
+<p align = "justify"> &emsp;O comando `git reset` move a branch atual para um commit específico. Você pode usar o hash do commit para mover a branch atual para o último commit sem o erro. O `--force` é usado para forçar o reset, mesmo que você tenha commits não salvos.</p>
+
+```
+git reset <COMMIT_ID>
+
+ou
+
+git reset --force <COMMIT_ID>
+```
+
+### <p align="justify">&emsp; Acima tem duas formas, uma mais recomendada e outra menos recomendada porém mais imediata para emergências. Contudo a melhor forma de resolver problemas na main é não os deixando chegar lá.</p>
+
+### O que é uma branch?
 <p align = "justify"> &emsp;Uma branch é uma ramificação independente no Git que permite desenvolver funcionalidades ou correções de forma isolada do ramo principal (geralmente chamado de "master" ou "main"). Entretanto, é possível criar branches com quaisquer nomes, comumente com os nomes das funcionalidades especificas em desenvolvimento.</p>
 
 ### Criando e alterando branches
@@ -577,8 +604,6 @@ Como fazer Fork de um Repositório
 - Clique no botão "Fork" no canto superior direito.
 - Isso criará uma cópia do repositório em sua conta.
 
-### **Trabalhando em Colaboração**
-
 <p align="justify">&emsp;Uma vez que você tenha um fork do repositório, você pode trabalhar nas suas alterações. Aqui estão os passos gerais para trabalhar em colaboração:</p>
 
 1. Clone o fork para o seu ambiente de desenvolvimento local.
@@ -591,15 +616,65 @@ Como fazer Fork de um Repositório
     ```
 1. Faça suas alterações no código.
 1. Adicione e faça commit das suas alterações.
-```
-git add .
-git commit -m "Minha mensagem de commit"
-```
+    ```
+    git add .
+    git commit -m "Minha mensagem de commit"
+    ```
 1. Faça push das alterações para o seu fork.
-```
-git push origin minha_branch
-```
+    ```
+    git push origin minha_branch
+    ```
 1. No GitHub, crie um Pull Request para o repositório original.
+
+
+### **Trabalhando em Colaboração**
+
+Usar o Git e o GitHub em um ambiente de equipe requer algumas práticas recomendadas para garantir uma colaboração eficiente e evitar conflitos desnecessários. Abaixo temos algumas boas práticas para utilizar o Git e GitHub em um ambiente de grupo:
+
+1. **Crie um fluxo de trabalho consistente:**
+   - Estabeleça um fluxo de trabalho Git claro, como o Gitflow, para padronizar como as ramificações são criadas, integradas e implantadas.
+
+1. **Use Branches:**
+   - Crie branches para recursos, correções de bugs e experimentos. Mantenha a branch `main` (ou `master`) para código de produção estável.
+
+1. **Mantenha a `main` Limpa:**
+   - Evite commits diretos na branch `main`. Use branches de feature ou hotfix e faça pull requests para incorporar alterações na `main`.
+
+1. **Faça Pull Regularmente:**
+   - Mantenha seu repositório local atualizado fazendo pull regularmente da branch `main`.
+
+1. **Use Pull Requests (PRs):**
+   - Antes de mesclar código, crie pull requests para revisão. Isso facilita a revisão de código e a detecção de problemas antes da integração.
+
+1. **Revisão de Código:**
+   - Encoraje a revisão de código entre membros da equipe para garantir a qualidade e a consistência do código.
+
+1. **Comentários Significativos:**
+   - Faça comentários significativos nas Pull Requests e nos commits para facilitar a compreensão do que está sendo alterado.
+
+1. **Integração Contínua:**
+   - Configure integração contínua para automatizar testes e construções sempre que houver novos commits.
+
+1. **Resolva Conflitos Rapidamente:**
+   - Se ocorrerem conflitos durante a mesclagem, resolva-os imediatamente para evitar problemas posteriores.
+
+1. **Use Tags para Versões:**
+    - Marque versões estáveis com tags. Isso facilita o rastreamento de versões específicas do código.
+
+1. **Ignore Arquivos Gerados:**
+    - No arquivo `.gitignore`, liste arquivos gerados automaticamente (por compiladores, IDEs, etc.) para evitar que eles sejam incluídos acidentalmente no repositório.
+
+1. **Documentação:**
+    - Mantenha documentação atualizada, incluindo instruções sobre como configurar e executar o projeto.
+
+1. **Use Issues para Rastreamento:**
+    - Use issues para rastrear tarefas, bugs e melhorias. Isso facilita o acompanhamento do progresso.
+
+1. **Seja Descritivo nos Commits:**
+    - Escreva mensagens de commit descritivas que expliquem claramente o propósito da alteração.
+
+1. **Mantenha o Repositório Organizado:**
+    - Mantenha um repositório organizado com uma estrutura lógica de pastas e arquivos.
 
 ### **Revisão de Código**
 
@@ -778,13 +853,3 @@ git clone git@github.com-conta1:usuario-1/TestRepo.git
 - [Github status readme](https://github.com/anuraghazra/github-readme-stats)
 - [Markdown tutorial](https://github.com/luong-komorebi/Markdown-Tutorial)
 - [Badges readme](https://github.com/alexandresanlim/Badges4-README.md-Profile)
-
-<br>
-<h1 id="Equipe">Equipe</h1><br>
-
-<div align="center">
-
-|     Desenvolvedor              |           GitHub             |       LinkedIn     |
-|--------------------------------|------------------------------|--------------------|
-|👤 João Vitor Moraes            |<https://github.com/JohKemPo>   |<https://www.linkedin.com/in/joao-vitor-de-moraes/>|
-</div>

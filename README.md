@@ -3,15 +3,14 @@
   <h1>Oficina de Git e Github</h1>
 </div>
 
-<br>
-<p align="justify"> &emsp; Link da apresentação da oficina: <a href="https://www.canva.com/design/DAF1sSIMpfM/dg-M_uJUzcXZweOrENdkXw/edit?utm_content=DAF1sSIMpfM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">apresentação no canva</a></p>
-<br>
-
 <p align = "justify"> &emsp; Este repositório é uma cópia do repositório de <a href="https://github.com/JohKemPo" target="_blank">@JohKemPo</a> modificado para realização da oficina por <a href="https://github.com/vyctor922" target="_blank">@vyctor922</a>. </p>
 
 
 <h2 align="center">S U M Á R I O</h2>
 <br>
+<p align="justify"> &emsp; Link da apresentação da oficina: <a href="https://www.canva.com/design/DAF1sSIMpfM/dg-M_uJUzcXZweOrENdkXw/edit?utm_content=DAF1sSIMpfM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="Ícone Canva" width="20" height="20" style="vertical-align: middle;"> Canvas Presentation</a></p>
+<br>
+
 
 1. [Introdução](#capitulo1)
    - O que é Git?

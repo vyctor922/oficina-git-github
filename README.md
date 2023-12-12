@@ -836,23 +836,34 @@ git clone git@github.com-conta1:usuario-1/TestRepo.git
 
 ### **Material complementar**
 
+
+- [fonte-readme](https://github.com/JohKemPo/VII-Semana-de-Computa-UFF-Github
+
+- [git-basics](https://mazer.dev/pt-br/git/introducao/git-basico)
+- [git-commands](https://medium.com/analytics-vidhya/git-commands-day-to-day-life-98ca95acc2cc)
+
+- [git-visual](https://git-school.github.io/visualizing-git)
+- [git-cheatsheet](https://ndpsoftware.com/git-cheatsheet.html)
+- [git-book](https://git-scm.com/book/es/v2)
+
+- [git-download](https://git-scm.com/downloads)
+- [git-docs](https://git-scm.com/docs)
+  - [git-docs-commands](https://git-scm.com/docs/git/es#_comandos_git)
+
+
 <p align="justify">&emsp;Material de consulta em geral sobre personalização de readme e dicas</p>
 
 - [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
 - [skill-icons](https://github.com/tandpfun/skill-icons)
+- [Badges-readme](https://github.com/alexandresanlim/Badges4-README.md-Profile)
 - [pretty-readme-badges](https://github.com/VishwaGauravIn/pretty-readme-badges)
-- [Badges4-README.md-Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)
-- [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
 - [github-profile-summary-cards](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 - [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
 - [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
 - [readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph)
-- [Markdown Tutorial](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md)
-- [Criar e realçar blocos de código](https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
-- [padrões-de-commits](https://github.com/iuricode/padroes-de-commits)
-- [Conventional Commits Pattern](https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657)
-- [Git Branch](https://blog.betrybe.com/git/git-branch/)
-- [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/#summary)
-- [Github status readme](https://github.com/anuraghazra/github-readme-stats)
-- [Markdown tutorial](https://github.com/luong-komorebi/Markdown-Tutorial)
-- [Badges readme](https://github.com/alexandresanlim/Badges4-README.md-Profile)
+- [markdown-tutorial](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md)
+- [creating-and-highlighting-code-blocks](https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
+- [patterns-commits](https://github.com/iuricode/padroes-de-commits)
+- [conventional-commits-pattern](https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657)
+- [git-branch](https://blog.betrybe.com/git/git-branch/)
+- [conventional-commits-specification](https://www.conventionalcommits.org/en/v1.0.0/#summary)

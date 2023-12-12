@@ -837,7 +837,7 @@ git clone git@github.com-conta1:usuario-1/TestRepo.git
 ### **Material complementar**
 
 
-- [fonte-readme](https://github.com/JohKemPo/VII-Semana-de-Computa-UFF-Github
+- [fonte-readme](https://github.com/JohKemPo/VII-Semana-de-Computa-UFF-Github)
 
 - [git-basics](https://mazer.dev/pt-br/git/introducao/git-basico)
 - [git-commands](https://medium.com/analytics-vidhya/git-commands-day-to-day-life-98ca95acc2cc)

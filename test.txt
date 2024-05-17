@@ -1,0 +1,15 @@
+ O volume na unidade C n∆o tem nome.
+ O N£mero de SÇrie do Volume Ç 3651-33A0
+
+ Pasta de C:\Users\Lauan\Desktop\oficina-pavic-git\oficina-git-github
+
+17/05/2024  12:21    <DIR>          .
+17/05/2024  11:55    <DIR>          ..
+17/05/2024  12:15    <DIR>          img
+17/05/2024  10:30             5.534 Markdown .md
+17/05/2024  12:21    <DIR>          pasta_de_test
+17/05/2024  10:30            43.190 README.md
+17/05/2024  12:29             4.696 saida.txt
+17/05/2024  12:40                 0 test.txt
+               4 arquivo(s)         53.420 bytes
+               4 pasta(s)   83.664.568.320 bytes dispon°veis

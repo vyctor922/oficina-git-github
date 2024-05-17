@@ -3,7 +3,6 @@
   <h1>Oficina de Git e Github</h1>
 </div>
 
-
 <p align = "justify"> &emsp; Este repositório é uma cópia do repositório de <a href="https://github.com/JohKemPo" target="_blank">@JohKemPo</a> modificado para realização da oficina por <a href="https://github.com/vyctor922" target="_blank">@vyctor922</a>. </p>
 
 

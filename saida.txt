@@ -1,0 +1,155 @@
+commit 710d4aa4bcc13be4d439f9dbab4cb61be45305e0
+Merge: 095704b 20bb386
+Author: lauanferreira15@gmail.com <lauanferreira15@gmail.com>
+Date:   Fri May 17 12:21:26 2024 -0500
+
+    Merge branch 'minhacomtribuicaoOficial' of https://github.com/Ferreiramix/oficina-git-github into minhacomtribuicaoOficial
+
+commit 095704b18e662a2dd109git 64726c26af8b751a4ee7
+Author: lauanferreira15@gmail.com <lauanferreira15@gmail.com>
+Date:   Fri May 17 12:19:17 2024 -0500
+
+    Arquivo de imagem
+    
+    Arquivo apago
+
+commit 20bb3863d686343201b5f5bd4aa2ba0a1e89a572
+Author: Lauan Ferreira De Oliveira <144186957+Ferreiramix@users.noreply.github.com>
+Date:   Fri May 17 12:17:41 2024 -0500
+
+    Delete saida2.txt
+
+commit efd2c04c77c8ea2a8db492ff990e5a9199e2c556
+Merge: 2e13fc7 050a6a4
+Author: Lauan Ferreira De Oliveira <144186957+Ferreiramix@users.noreply.github.com>
+Date:   Fri May 17 12:13:34 2024 -0500
+
+    Merge branch 'vyctor922:main' into minhacomtribuicaoOficial
+
+commit 2e13fc755237adfa3111f8551913bdcc3dd5041b
+Author: lauanferreira15@gmail.com <lauanferreira15@gmail.com>
+Date:   Fri May 17 12:10:21 2024 -0500
+
+    Arquivo que eu modifiquei
+    
+    fiz isso pq esta certa minha modificação
+
+commit 050a6a4e934d53c440f85507b23c62ac628a521e
+Author: Victor Alexandre <victoralexandre922@gmail.com>
+Date:   Fri May 17 11:32:59 2024 -0500
+
+    gitkeep adicionado
+
+commit 201260f7fbfae8fdf882796e197019916a2837f6
+Author: Victor Alexandre <victoralexandre922@gmail.com>
+Date:   Fri May 17 11:30:03 2024 -0500
+
+    subir testes
+
+commit 6479ebdb64ce2cca89a1d39178d956eda1974593
+Author: Victor Alexandre <victoralexandre922@gmail.com>
+Date:   Fri May 17 11:08:49 2024 -0500
+
+    Revert "adicionando quebra de linhas"
+    
+    This reverts commit 709feb47ec63c09e9900fd53edb3bf4f7104421f.
+
+commit 709feb47ec63c09e9900fd53edb3bf4f7104421f
+Author: Victor Alexandre <victoralexandre922@gmail.com>
+Date:   Fri May 17 11:07:25 2024 -0500
+
+    adicionando quebra de linhas
+
+commit 0756c2726fc22d751fafa95bea00a46d23d8a369
+Merge: c05b939 ee24d5a
+Author: Victor Alexandre <victoralexandre922@gmail.com>
+Date:   Fri May 17 11:05:19 2024 -0500
+
+    titulo da resolução de merge
+    
+    resolevendo conflitos de merge
+
+commit c05b939a6a20d22453d7e2655ed93f4a9c4db440
+Author: Victor Alexandre <victoralexandre922@gmail.com>
+Date:   Fri May 17 11:00:05 2024 -0500
+
+    teste de conflito
+
+commit ee24d5aaf7a08f14ba1d6c9da0fdf608c9edfb55
+Author: Victor Alexandre <victoralexandre922@gmail.com>
+Date:   Fri May 17 10:59:02 2024 -0500
+
+    titulo
+
+commit 031feb417accf28773f49d74b54afb1feb9655be
+Author: Victor Alexandre <49332954+vyctor922@users.noreply.github.com>
+Date:   Mon Dec 11 22:17:46 2023 -0500
+
+    Update README.md
+
+commit f90fb51a121ca047f700d19b47a2655bdb3bc05a
+Author: Victor Alexandre <49332954+vyctor922@users.noreply.github.com>
+Date:   Mon Dec 11 22:17:19 2023 -0500
+
+    Update README.md
+
+commit d106ff8d2fcefc5e154e40b21a2c23eba5f186cf
+Author: Victor Alexandre <49332954+vyctor922@users.noreply.github.com>
+Date:   Mon Dec 11 22:02:00 2023 -0500
+
+    Update README.md
+
+commit 68d2ab3ac01861bfe1356b11d2aa43d61981c1e7
+Merge: 23168ac 0db1b12
+Author: Victor Alexandre <49332954+vyctor922@users.noreply.github.com>
+Date:   Mon Dec 11 16:56:36 2023 -0500
+
+    Merge pull request #2 from neo-team-org/hotfix-url2
+    
+    correção do link
+
+commit 0db1b12e544a36ee3c61e00267266b2cc909dc26
+Author: vyctor922 <victoralexandre922@gmail.com>
+Date:   Mon Dec 11 21:54:26 2023 -0500
+
+    correção do link
+    
+    modificado erro do link e adicionado link mais apresentável
+
+commit 23168ac9ce1b95fd4b13b82f31b7a3129a151b56
+Merge: f316fdb 606f57e
+Author: Victor Alexandre <49332954+vyctor922@users.noreply.github.com>
+Date:   Mon Dec 11 16:21:58 2023 -0500
+
+    Merge pull request #1 from neo-team-org/main
+    
+    modificação da oficina
+
+commit 606f57e20f48b9ed740fb0af851d24dfad4987ed
+Author: Victor Alexandre <49332954+vyctor922@users.noreply.github.com>
+Date:   Mon Dec 11 16:19:30 2023 -0500
+
+    Update README.md
+
+commit 5fbcd9a3e283c859ed83680520061fec2778cf3f
+Author: vyctor922 <victoralexandre922@gmail.com>
+Date:   Wed Dec 6 12:17:09 2023 -0500
+
+    mod readme
+    
+    modificaçãoes pertinentes para a oficina
+
+commit f316fdb84fde0142657adeacb28b45508f7d13aa
+Author: vyctor922 <victoralexandre922@gmail.com>
+Date:   Wed Dec 6 10:11:12 2023 -0500
+
+    first commit
+    
+    add docs, init repo
+commit 710d4aa4bcc13be4d439f9dbab4cb61be45305e0
+Merge: 095704b 20bb386
+Author: lauanferreira15@gmail.com <lauanferreira15@gmail.com>
+Date:   Fri May 17 12:21:26 2024 -0500
+
+    Merge branch 'minhacomtribuicaoOficial' of https://github.com/Ferreiramix/oficina-git-github into minhacomtribuicaoOficial
+

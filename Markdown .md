@@ -2,6 +2,8 @@
   <h1>Guia prático de Markdown</h1>
 </div>
 
+<br>
+
 <p align = "justify"> &emsp; Markdown é uma linguagem de marcação leve que permite a formatação de texto de forma simples e legível. É amplamente utilizado para criar documentos de texto formatados, como READMEs de projetos no GitHub, páginas da web, documentação, blogs e muito mais. Neste estudo detalhado sobre Markdown, exploraremos os conceitos básicos, a sintaxe e os elementos mais comuns.</p>
 
 

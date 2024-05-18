@@ -8,11 +8,12 @@
 
 <h2 align="center">S U M Á R I O</h2>
 <br>
-<p align="justify"> &emsp; Link da apresentação da oficina: <a href="https://www.canva.com/design/DAF1sSIMpfM/dg-M_uJUzcXZweOrENdkXw/edit?utm_content=DAF1sSIMpfM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="Ícone Canva" width="20" height="20" style="vertical-align: middle;"> Canvas Presentation</a></p>
+<p align="justify"> &emsp; Link da apresentação da oficina: <a href="https://www.canva.com/design/DAF1sSIMpfM/dg-M_uJUzcXZweOrENdkXw/view" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="Ícone Canva" width="20" height="20" style="vertical-align: middle;"> Canvas Presentation</a></p>
 <br>
 
 
 1. [Introdução](#capitulo1)
+   - O que é Versionamento de Código?
    - O que é Git?
    - O que é Github?
    - O que é Versionamento de Código?
@@ -91,6 +92,9 @@
 <br>
 
 <h2 id="capitulo1">Introdução</h2>
+<h2 id="">O que é Versionamento de Código?</h2>
+<p align="justify"> &emsp; Versionamento de código, também conhecido como controle de versão, é um sistema que registra as mudanças feitas em um conjunto de arquivos ao longo do tempo. Ele permite que você acompanhe o histórico de alterações, restaure versões anteriores do código e colabore com outros desenvolvedores de forma eficiente. </p>
+
 <h2 id="">O que é o Git?</h2>
 <p align = "justify"> &emsp; O Git é um sistema de controle de versão distribuído que permite rastrear as mudanças em um conjunto de arquivos ao longo do tempo. Ele é amplamente utilizado para o gerenciamento de código fonte em projetos de desenvolvimento de software, mas pode ser usado para qualquer tipo de arquivo.</p>
 
@@ -256,9 +260,18 @@ git clone URL_do_Repositório
 - Exemplo:
 - Para adicionar arquivos especificos em estado `Untracked` ou `Modified`:
 ```
-git add nome_do_arquivo
+git add <nome_do_arquivo / nome_da_pasta>
 ```
 - Para adicionar todos os arquivos em estado `Untracked` ou `Modified`:
+```
+git add --all
+```
+```
+git add -A
+```
+```
+git add *
+```
 ```
 git add .
 ```
@@ -283,6 +296,9 @@ git pull origin main
 <p align = "justify"> &emsp;Depois de comitar suas alterações e sincronizar seu repositório local, você está pronto para enviar as alterações para o repositório remoto. Use o comando <b><i>git push</i></b> seguido do nome do repositório remoto (por padrão, "origin") e o nome da ramificação que deseja atualizar.</p>
 
 - Exemplo:
+```
+git push
+```
 ```
 git push origin main
 ```
@@ -322,11 +338,11 @@ git diff
 ```
 
 ### git reset: Desfazer commits
-<p align = "justify"> &emsp;O comando <b><i>git reset</i></b>  é utilizado para desfazer commits. Ele permite mover os commits para um estado anterior e pode ser útil para corrigir erros ou reorganizar o histórico.</p>
+<p align = "justify"> &emsp;O comando <b><i>git reset</i></b>  é utilizado para desfazer alterações. Ele permite mover os commits para um estado anterior e pode ser útil para corrigir erros ou reorganizar o histórico.</p>
 
-- Exemplo:
+- Exemplo de uso para desfazer a última confirmação (staging):
 ```
-git reset HEAD~1
+git reset
 ```
 
 <p align = "justify"> &emsp;HEAD~1: Esta parte do comando especifica o ponto para o qual você deseja reverter. O HEAD representa o commit mais recente na branch atual, e o ~1 indica que você deseja voltar um único commit. Se você desejar voltar mais de um commit, poderá ajustar o número após o til (~).</p>
@@ -357,10 +373,6 @@ git branch hotfix-<ERROR_NAME> <COMMIT_ID>
 <p align = "justify"> &emsp;O comando `git reset` move a branch atual para um commit específico. Você pode usar o hash do commit para mover a branch atual para o último commit sem o erro. O `--force` é usado para forçar o reset, mesmo que você tenha commits não salvos.</p>
 
 ```
-git reset <COMMIT_ID>
-
-ou
-
 git reset --force <COMMIT_ID>
 ```
 
@@ -386,12 +398,7 @@ git branch -d nome_da_branch
 
 ### Criando a partir de outra
 
-- **Certifique-se de estar na branch de origem:**
-
-```
-git checkout nome-da-branch-de-origem
-```
-- **Crie uma nova branch a partir da branch de origem:**
+- **Crie uma nova branch a partir da branch de origem e mude para ela imediatamente:**
 
 ```
 git checkout -b nome-da-nova-branch
@@ -401,14 +408,16 @@ Isso cria uma nova branch e a seleciona automaticamente.
 - **Faça as alterações necessárias e adicione-as ao controle de versão:**
 
 ```
-git add .
+git add *
+```
+```
 git commit -m "Mensagem do commit"
 ```
 
 - **Publique a nova branch no repositório remoto:**
 
 ```
-git push origin nome-da-nova-branch
+git push nome-da-nova-branch
 ```
 
 <h2 id="merges">Merges e Conflitos</h2>
@@ -464,13 +473,10 @@ Passos para criar um novo repositório no GitHub:
             git init
             git add README.md
             git commit -m "first commit"
-            git branch -M main # Ou a branch padrao pré configurada, normalmente "master"
-            git remote add origin `HTTPS DO REPOSITÓIO`
-            git push -u origin main
         ```
     1. Enviando a um repositório existente a partir da linha de comando:
         ```bash
-            git remote add origin `HTTPS DO REPOSITÓIO`
+            git remote add origin `HTTPS DO REPOSITÓRIO`
             git branch -M main # Ou a branch padrao pré configurada, normalmente "master"
             git push -u origin main
         ```

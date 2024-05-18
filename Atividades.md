@@ -4,7 +4,7 @@
 
 ### Atividade: Trabalhando com Branches
 
-**Objetivo:** Criar, mudar e mesclar branches.
+**Objetivo:** Criar, alternar e mesclar branches.
 
 **Passo a Passo:**
 
@@ -26,7 +26,7 @@
      git branch
      ```
 
-2. **Fazer Alterações e Commit:**
+1. **Fazer Alterações e Commit:**
    - Faça alterações em um arquivo (por exemplo, edite `README.md`).
    - Adicione as mudanças ao staging:
      ```sh
@@ -37,7 +37,7 @@
      git commit -m "Atualização README" -m "Atualização no README na minha nova branch"
      ```
 
-3. **Mesclar a Branch:**
+1. **Mesclar a Branch:**
    - Mude de volta para a branch principal:
      ```sh
      git checkout main
@@ -49,52 +49,129 @@
 
 ---
 
-### Atividade: Uso de Pull Requests no GitHub
+### Atividade: Prática com GIT
 
-**Objetivo:** Contribuir para um repositório remoto utilizando pull requests.
+**Objetivo:** Praticar operações básicas com GIT.
 
 **Passo a Passo:**
 
 1. **Fork do Repositório:**
-   - No GitHub, acesse um repositório público e clique em "Fork" para criar uma cópia no seu perfil.
+   - No GitHub, acesse o repositório [oficina-git-github](https://github.com/vyctor922/oficina-git-github) e clique em "Fork" para criar uma cópia no seu perfil.
 
-2. **Clonar o Repositório Forkado:**
+1. **Clonar o Repositório Forkado:**
    - No terminal, clone seu fork:
      ```sh
-     git clone https://github.com/seu-usuario/nome-do-repositorio.git
+     git clone https://github.com/seu-usuario/<nome-do-seu-fork-repositorio>.git
      ```
 
-3. **Criar uma Branch para as Alterações:**
+1. **Criar uma Branch para as Alterações:**
    - Navegue até o diretório do repositório clonado:
      ```sh
-     cd nome-do-repositorio
+     cd <nome-do-repositorio>
      ```
    - Crie e mude para uma nova branch:
      ```sh
      git checkout -b minha-contribuicao
      ```
 
-4. **Fazer Alterações e Commit:**
-   - Faça as alterações necessárias no código.
-   - Adicione as mudanças ao staging:
+1. **Adicionar um Arquivo:**
+   - Crie um arquivo chamado `index.txt` no diretório.
+
+1. **Verificar o Status do Repositório:**
+   - No terminal, verifique o status:
      ```sh
-     git add .
-     ```
-   - Faça o commit:
-     ```sh
-     git commit -m "Minha contribuição"
+     git status
      ```
 
-5. **Enviar as Alterações para o GitHub:**
-   - Empurre as mudanças para seu repositório forkado:
+1. **Adicionar o Arquivo ao Stage:**
+   - Adicione o arquivo para ser rastreado pelo Git:
      ```sh
-     git push origin minha-contribuicao
+     git add index.txt
      ```
 
-6. **Criar um Pull Request:**
+1. **Confirmar a Alteração com um Commit:**
+   - Faça o commit das alterações:
+     ```sh
+     git commit -m "seu título" -m "sua descrição"
+     ```
+
+1. **Enviar as Alterações para o Repositório Remoto:**
+   - Atualize seu repositório local e envie as alterações:
+     ```sh
+     git fetch
+     ```
+     ```sh
+     git pull
+     ```
+     ```sh
+     git push
+     ```
+
+1. **Adicionar Conteúdo ao Arquivo:**
+   - Adicione "hello world" ao `index.txt`:
+     ```sh
+     echo hello world > index.txt
+     ```
+
+1. **Verificar o Status do Repositório de Forma Compacta:**
+    - Verifique o status de forma compacta:
+     ```sh
+     git status --short
+     ```
+
+    - Indicadores de status (--short):
+      - `??` - Arquivos não rastreados
+      - `A` - Arquivos adicionados ao stage
+      - `M` - Arquivos modificados
+      - `D` - Arquivos deletados
+
+1. **Visualizar o Log do Repositório:**
+    - Confira o log do repositório para ver as informações dos commits:
+     ```sh
+     git log
+     ```
+
+1. **Ver Detalhes de um Commit Específico:**
+    - Com o ID de um dos commits no log, veja os detalhes do commit:
+     ```sh
+     git show <id_commit>
+     ```
+
+---
+
+A partir daqui, apenas orientações:
+
+- Faça alterações no `index.txt`, adicionando qualquer texto e confirme as alterações.
+- Adicione uma imagem dentro de uma pasta chamada `img` no repositório e confirme as alterações.
+- Delete a imagem do repositório e confirme a alteração.
+
+---
+
+- Gere um arquivo com a exportação do log do repositório:
+  ```sh
+  git log > saida.txt
+  ```
+
+- Adicione ao arquivo `saida.txt` a visualização do que fez no último commit:
+  ```sh
+  git show >> saida.txt
+  ```
+
+---
+
+### Atividade: Uso de Pull Requests no GitHub
+
+**Objetivo:** Contribuir para um repositório remoto utilizando pull requests.
+
+**Passo a Passo:**
+
+1. **Certifique-se de que Todas as Alterações Foram Enviadas:**
+   - Garanta que não existem novas alterações para serem enviadas ao GitHub.
+
+1. **Criar um Pull Request:**
    - No GitHub, navegue até o seu repositório forkado.
    - Clique no botão "Compare & pull request".
-   - Adicione um título e descrição para o pull request.
+   - Adicione um título e uma descrição para o pull request.
    - Clique em "Create pull request".
 
 ---
@@ -110,7 +187,7 @@
    - No branch `main`, adicione uma linha ao arquivo `README.md` e faça o commit.
    - No branch `feature`, adicione uma linha diferente ao mesmo arquivo e faça o commit.
 
-2. **Tentar Mesclar os Branches:**
+1. **Tentar Mesclar os Branches:**
    - Mude para o branch `main`:
      ```sh
      git checkout main
@@ -121,7 +198,7 @@
      ```
    - Um conflito de merge será gerado.
 
-3. **Resolver o Conflito:**
+1. **Resolver o Conflito:**
    - Abra o arquivo `README.md` no editor de texto.
    - Encontre e resolva os conflitos (linhas marcadas por `<<<<<<`, `======`, `>>>>>>`).
    - Adicione as mudanças ao staging:
@@ -135,4 +212,4 @@
 
 ---
 
-Essas atividades fornecem uma experiência prática e abrangente para aprender a utilizar Git e GitHub, cobrindo desde os conceitos básicos até situações mais avançadas.
+Essas atividades são práticas de fixação para auxiliar a compreensão dos conceitos de Git e GitHub.
